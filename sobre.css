@@ -15,7 +15,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 40px;
+  padding: 10px 30px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  z-index: 999;
 }
 
 .logo {
@@ -41,85 +48,98 @@ nav a {
 }
 
 nav .icon {
-    display: flex;
+  display: flex;
   height: 80px;
-    align-items: center;
+  align-items: center;
 }
 
 .section1 {
-    display: flex;
-    margin: 80px;
-    align-items: center;
-    gap: 50px;
+  display: flex;
+  margin: 80px;
+  align-items: center;
+  gap: 50px;
 }
-.section1 > div.texto {
-    flex: 1;
-    text-align: center;
+
+.section1>div.texto {
+  flex: 1;
+  text-align: center;
 }
-.section1 h2{
-    margin: 10px ;
+
+.section1 h2 {
+  margin: 10px;
 }
+
 .section1 p {
-    margin: 10px 0;
-    font-size: large;
+  margin: 10px 0;
+  font-size: large;
 }
+
 .section1 img {
-    height: 300px;
-    border-radius: 30px;
-    flex-shrink: 0;
+  height: 300px;
+  border-radius: 30px;
+  flex-shrink: 0;
 }
 
 .section2 {
-    background-color: #2b4c7e;
-    color: white;
-    padding: 40px 80px;
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    flex-direction: row;
+  background-color: #2b4c7e;
+  color: white;
+  padding: 40px 80px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-direction: row;
 }
-.section2 > div.texto {
-    flex: 1;
-    text-align: center;
+
+.section2>div.texto {
+  flex: 1;
+  text-align: center;
 }
-.section1 h2{
-    margin: 10px ;
+
+.section1 h2 {
+  margin: 10px;
 }
+
 .section1 p {
-    margin: 10px 0;
-    font-size: large;
+  margin: 10px 0;
+  font-size: large;
 }
+
 .section2 img {
-    height: 400px;
-    border-radius: 30px;
-    flex-shrink: 0;
+  height: 400px;
+  border-radius: 30px;
+  flex-shrink: 0;
 }
 
 
 .section3 {
-    background-color: #2b4c7e;
-    color: white;
-    padding: 100px 0;
-    text-align: center;
-    width: 100%;
-    overflow-x: hidden;
+  background-color: #2b4c7e;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+  width: 100%;
+  overflow-x: hidden;
 }
+
 .section3 .texto {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 40px;
 }
-.section3 h2{
-    margin: 10px ;
+
+.section3 h2 {
+  margin: 10px;
 }
+
 .section3 p {
-    margin: 10px 0;
-    font-style: italic;
+  margin: 10px 0;
+  font-style: italic;
 }
 
 @media (max-width: 768px) {
+
   .section1,
-  .section2, .section3 {
+  .section2,
+  .section3 {
     flex-direction: column;
     text-align: center;
     margin: 40px 20px;
@@ -137,8 +157,8 @@ nav .icon {
     margin-top: 20px;
   }
 
-  .section1 > div.texto,
-  .section2 > div.texto {
+  .section1>div.texto,
+  .section2>div.texto {
     width: 100%;
   }
 
